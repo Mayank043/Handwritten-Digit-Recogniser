@@ -1,27 +1,25 @@
-# MNIST Digit Classifier
+# Handwritten Digit Recogniser
 
 This project is a **Machine Learning based Handwritten Digit Recognition System** built using Python and Scikit-learn.
 
-The model is trained on the famous **MNIST dataset**, which contains thousands of handwritten digit images from 0–9.
+The model is trained to recognize handwritten digits from **0 to 9** using image data. It takes an image of a handwritten digit and predicts which number it represents.
 
-The system classifies a handwritten digit image and predicts which number it represents.
+The project uses the **MNIST dataset**, one of the most popular datasets for image classification tasks in machine learning.
 
 ---
 
 ## Dataset
 
-This project uses the **MNIST Dataset**, a popular dataset used in machine learning and computer vision research.
-
-The dataset contains:
+The model is trained using the MNIST dataset which contains:
 
 - 70,000 handwritten digit images
 - Each image is 28 × 28 pixels
-- Digits range from 0 to 9
+- Digits from 0 to 9
 
-Split used in this project:
+Dataset split used in this project:
 
-- Training set: 60,000 images
-- Test set: 10,000 images
+- Training data: 60,000 images
+- Testing data: 10,000 images
 
 ---
 
@@ -34,7 +32,7 @@ Split used in this project:
 
 ---
 
-## Machine Learning Algorithm
+## Machine Learning Type
 
 This project uses:
 
@@ -47,41 +45,41 @@ Algorithm used:
 
 ---
 
-## How the Model Works
+## How the System Works
 
-1. Load the MNIST dataset using Scikit-learn
-2. Split the dataset into training and testing sets
+1. Load the handwritten digit dataset
+2. Split the dataset into training and testing data
 3. Shuffle the training data
-4. Train a Logistic Regression model
+4. Train the Logistic Regression model
 5. Select a test image
-6. Predict the digit using the trained model
-7. Display the image and predicted label
+6. Predict the digit
+7. Display the image with the predicted number
 
 ---
 
 ## Example
 
-The program allows the user to select an image index from the test dataset.
+The program asks the user to choose an image from the test dataset.
 
-Example:
+Example input:
 
 ```
-Select a number between 0 and 9999 to select an image: 145
+Select a number between 0 and 9999 to select an image: 120
 ```
 
-The system will:
+The program will:
 
 - Display the handwritten digit image
-- Predict the digit value
+- Predict the number shown in the image
 
 ---
 
 ## Project Structure
 
 ```
-mnist-digit-classifier
+handwritten-digit-recogniser
 │
-├── digit_classifier.py
+├── digit_recogniser.py
 └── README.md
 ```
 
@@ -89,9 +87,9 @@ mnist-digit-classifier
 
 ## Future Improvements
 
-- Use Convolutional Neural Networks (CNN)
-- Build a web interface for drawing digits
-- Improve accuracy with deep learning models
+- Implement deep learning using Convolutional Neural Networks (CNN)
+- Create a web interface where users can draw digits
+- Improve model accuracy
 - Deploy the model as a web application
 
 ---
